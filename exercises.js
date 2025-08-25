@@ -20,7 +20,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_10();
+  exercise_15();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -283,8 +283,13 @@ function exercise_11() {
    - The first element the name of the key
    - The second element, the value of that key
   */
+const emp = new Map();
+emp.set('name', 'Stacey');
+emp.set('age', 38);
+emp.set('job', 'Carrier');
 
-  const placeholder = "Delete this line and code in this space";
+console.log(`This person's name is ${emp.get("name")}`);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -305,8 +310,15 @@ function exercise_12() {
   
   */
   // CODE IN THE OPEN LINES BELOW
+const emp = new Map();
+emp.set('name', 'Stacey');
+emp.set('age', 38);
+emp.set('job', 'Carrier');
 
-  const placeholder = "Delete this line and code in this space";
+console.log(emp);
+
+emp.delete("age");
+console.log(emp);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -340,9 +352,29 @@ function exercise_13() {
 
   */
   // CODE IN THE OPEN LINES BELOW
+const dogs = new Set();
+dogs.add("Maxx");
+dogs.add("Mikina");
+dogs.add("Kipper");
+console.log(dogs);
 
-  const placeholder = "Delete this line and code in this space";
+dogs.add("Cubby");
+dogs.add("Finney");
+dogs.add("Future dogs");
+console.log(dogs);
 
+dogs.add("Maxx");
+console.log(dogs);
+
+console.log(dogs.has("Finney"));
+console.log(dogs.has("Mikina"));
+console.log(dogs.has("Cubby"));
+
+if(dogs.has("Finney") && dogs.has("Kipper") && dogs.has("Future dogs")){
+  console.log("Has all three");
+} else {
+  console.log("Does not contain all three");
+}
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -357,8 +389,17 @@ function exercise_14() {
   
   */
   // CODE IN THE OPEN LINES BELOW
+let i = 1;
+while ( i <= 5 ){
+  console.log(i);
+  i++;
+}
+let j = 10;
+while (j >= 1){
+  console.log(j);
+  j--;
+}
 
-  const placeholder = "Delete this line and code in this space";
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -377,8 +418,21 @@ function exercise_15() {
   
   */
   // CODE IN THE OPEN LINES BELOW
+let i = 28;
+ do {
+  console.log(i);
+  i--
+ } while ( i > 0);
 
-  const placeholder = "Delete this line and code in this space";
+ let j = 28;
+ do {
+  if(j % 7 === 0 || j % 4 === 0){
+    console.log(j);
+  }
+    j--;
+  } while ( j > 0);
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
