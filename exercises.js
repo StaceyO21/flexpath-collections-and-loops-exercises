@@ -20,7 +20,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_06();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -38,9 +38,10 @@ function exercise_01() {
   
   */
   // CODE IN THE OPEN LINES BELOW
+let nums = [1, 2, 3, 4, 5];
+console.log(nums);
 
-  const placeholder = "Delete this line and code in this space";
-
+console.log(nums.length);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -56,8 +57,8 @@ function exercise_02() {
   
   */
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code in this space";
+let nums = [1, 2, 3, 4, 5];
+console.log(nums[0], nums[4]);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -75,8 +76,13 @@ function exercise_03() {
   
   */
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code in this space";
+let arr = [];
+arr.push(2);
+arr.push(6);
+arr.push(22);
+arr.push(55);
+arr.push(222);
+console.log(arr);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -94,8 +100,9 @@ function exercise_04() {
   
   */
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code in this space";
+let arrString = ['Hello', 'Goodbye', 'See ya', 'bye', 'Welcome'];
+arrString.unshift(21);
+console.log(arrString);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -114,9 +121,10 @@ function exercise_05() {
   
   */
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code in this space";
-
+let arrString = ['Hello', 'Goodbye', 'See ya', 'bye', 'Welcome'];
+let removedItem = arrString.pop();
+console.log(removedItem);
+console.log(arrString);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -133,9 +141,10 @@ function exercise_06() {
   
   */
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code in this space";
-
+let arrString = ['Hello', 'Goodbye', 'See ya', 'bye', 'Welcome'];
+let removedItem = arrString.shift();
+console.log(removedItem);
+console.log(arrString);
   // CODE IN THE OPEN LINES ABOVE
 }
 
