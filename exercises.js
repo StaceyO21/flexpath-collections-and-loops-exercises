@@ -20,7 +20,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_06();
+  exercise_10();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -160,8 +160,15 @@ function exercise_07() {
   
   */
   // CODE IN THE OPEN LINES BELOW
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-  const placeholder = "Delete this line and code in this space";
+if(nums.includes(7)){
+console.log('Item is in the array!');
+} else {
+  console.log('Item not present in the array');
+}
+
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -185,8 +192,11 @@ function exercise_08() {
 
   */
   // CODE IN THE OPEN LINES BELOW
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(nums.indexOf(4));
+console.log(nums[2], nums[4]);
 
-  const placeholder = "Delete this line and code in this space";
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -204,8 +214,10 @@ function exercise_09() {
   
   */
   // CODE IN THE OPEN LINES BELOW
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-  const placeholder = "Delete this line and code in this space";
+console.log(nums.splice(1, 1));
+console.log(nums);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -232,8 +244,15 @@ function exercise_10() {
   
   */
   // CODE IN THE OPEN LINES BELOW
+const emp = new Map();
+emp.set('name', 'Stacey');
+emp.set('age', 38);
+emp.set('job', 'Carrier');
 
-  const placeholder = "Delete this line and code in this space";
+console.log(emp);
+console.log(`The employees name is ${emp.get('name')} `);
+console.log(`She is ${emp.get('age')} and is a ${emp.get('job')}`);
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
